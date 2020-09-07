@@ -67,13 +67,10 @@ export default function Counter() {
 
   const style = {
     fontSize: '1.5em',
-    marginBottom: '0.3em'
+    marginBottom: '0.3em',
+    color: counter % 2 === 0 ? 'royalblue' : 'crimson'
   };
-  if (counter % 2 === 0) {
-    style.color = 'royalblue'
-  } else {
-    style.color = 'crimson'
-  }
+
 
   return (
     <div className='widget-counter container'>

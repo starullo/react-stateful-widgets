@@ -54,13 +54,9 @@ export default function Input() {
 
   const style = {
     fontSize: '1.5em',
-    marginBottom: '0.3em'
+    marginBottom: '0.3em',
+    color: inputValue.length > 10 ? 'crimson' : 'royalblue'
   };
-  if (inputValue.length < 10) {
-    style.color = 'royalblue'
-  } else {
-    style.color = 'crimson'
-  }
 
   return (
     <div className='widget-input container'>
